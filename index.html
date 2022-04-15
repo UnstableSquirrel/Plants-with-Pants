@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        @font-face {
+            font-family: MADE TOMMY Medium;
+            src: url(fonts/MADE\ TOMMY\ Medium.otf);
+        }
+
+        * {
+            font-family: "MADE TOMMY Medium";
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            background-image: url(PWPSiteBackground.png);
+            background-position: center center;
+            /* Background image doesn't tile */
+            background-repeat: no-repeat;
+            /* Background image is fixed in the viewport so that it doesn't move when
+            the content's height is greater than the image's height */
+            background-attachment: fixed;
+            /* This is what makes the background image rescale based
+            on the container's size */
+            background-size: cover;
+            /* Set a background color that will be displayed
+            while the background image is loading */
+            background-color: #464646;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px 50px 0px;
+            padding: 0px;
+        }
+
+        .main-container > div {
+            display: grid;
+            grid-template-columns: auto;
+        }
+
+        .img-container, .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container > div > div > img {
+            width: 400px;
+            height: 250px;
+        }
+
+        .text-container {
+            justify-content: left;
+            text-align: left;
+            font-size: 22px;
+            font-weight: 400;
+            text-align: center;
+            padding: 20px 300px 20px 300px;
+        }
+
+        .text-container > p {
+            justify-content: left;
+            text-align: left;
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 38px;
+            border-radius: 12px;
+            border: 1px solid transparent;
+            color: #000000;
+            background-color: #1DC9A0;
+            font-size: 20px;
+            width: 150px;
+            height: 40px;
+            letter-spacing: 1px;
+            transition: all 0.15s linear;
+            margin-right: 70px;
+        }
+
+        button:hover {
+            background-color: rgba(29, 201, 160, 0.08);
+            border-color: #1DC9A0;
+            color: #1DC9A0;
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        button:active {
+            background-color: transparent;
+            border-color: #1DC9A0;
+            color: #1DC9A0;
+            transform: translateY(5px) scale(0.95);
+        }
+
+        button:disabled {
+            background-color: rgba(255, 255, 255, 0.16);
+            color: #8E8E93;
+            border-color: #8E8E93;
+        }
+
+        @media only screen and (min-width: 900px) and (max-width: 1100px) {
+            .text-container {
+                font-size: 22px;
+                padding: 20px 200px 20px 200px;
+            }
+        }
+
+        @media only screen and (min-width: 700px) and (max-width: 899px) {
+            .text-container {
+                font-size: 22px;
+                padding: 20px 100px 20px 100px;
+            }
+        }
+
+        @media only screen and (min-width: 550px) and (max-width: 699px) {
+            
+            .text-container {
+                font-size: 22px;
+                padding: 20px 25px 20px 25px;
+            }
+        }
+
+        @media only screen and (min-width: 250px) and (max-width: 549px) {
+
+            .text-container {
+                font-size: 15px;
+                padding: 20px 25px 20px 25px;
+            }
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 549px) {
+
+            .main-container > div > div > img {
+                margin: 0px !important;
+            }
+
+            .text-container {
+                font-size: 15px;
+                padding: 20px 25px 20px 25px;
+            }
+
+            button {
+                margin: 0px;
+            }
+
+            button:nth-child(1) {
+                margin-right: 10px !important;
+            }
+        }
+
+        @media only screen and (min-width: 200px) and (max-width: 399px) {
+
+            .main-container > div > div > img {
+                width: 200px;
+                height: 150px;
+            }
+
+            .text-container {
+                font-size: 15px;
+                padding: 20px 25px 20px 25px;
+            }
+
+            button {
+                margin: 0px;
+                font-size: 17px;
+                width: 120px;
+                height: 40px;
+            }
+
+            button:nth-child(1) {
+                margin-right: 10px !important;
+            }
+        }
+
+    </style>
+    <title>Plants with Pants</title>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div>
+
+            <div class="img-container">
+                <img src="PWP Logo.png" alt="PWP Logo">
+            </div>
+        
+            <div class="text-container">
+                <p>Plants with Pants is a charity collection of 50 one of one NFTs featuring... 
+                    plants wearing pants! Each little plant will be up for auction starting at 
+                    0.02 ETH (toughly $100) on the Polygon network - the Green blockchain.
+                </p>
+        
+                <p>90% of all proceeds will be going to One Tree Planted, along with 75& of
+                     all royalties from secondary market sales!
+                </p>
+        
+                <p>
+                    Join us in taking care of our beautiful planet, one goofy plant wearing pants
+                     at a time.
+                </p>
+            </div>
+        
+            <div class="button-container">
+                <button><a href="#">OpenSea</a></button>
+                <button><a href="https://twitter.com/EarthDayNFT?t=Hape7xe_13JDUHADEMdbbg&s=09">Twitter</a></button>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    
+</body>
+</html>
