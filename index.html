@@ -196,6 +196,46 @@
             button:nth-child(1) {
                 margin-right: 10px !important;
             }
+
+            .team-section {
+                display: grid !important;
+                grid-template-columns: auto !important;
+            }
+        }
+
+        .team-section {
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .team-section > div {
+            display: grid;
+            justify-content: center;
+        }
+
+        .pfp1 > label, .pfp2 > label {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+        }
+
+        .team-section > div > div > img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .pfp1 > div, .pfp2 > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sep {
+            width: 100px;
+            height: 100px;
         }
 
     </style>
@@ -230,6 +270,26 @@
             <div class="button-container">
                 <button><a href="#">OpenSea</a></button>
                 <button><a href="https://twitter.com/EarthDayNFT?t=Hape7xe_13JDUHADEMdbbg&s=09">Twitter</a></button>
+            </div>
+            <div class="button-container">
+                <button><a href="#">Telegram</a></button>
+            </div>
+
+            <div class="team-section">
+                <div class="pfp1">
+                    <div>
+                        <img src="Jorge.png" alt="Strange Maelstrom PFP">
+                    </div>
+                    <label for="team">Strange Maelstrom</label>  
+                </div>
+                <div class="sep">
+                </div>
+                <div class="pfp2">
+                    <div>
+                        <img src="Swirly Boi.png" alt="KB PFP">
+                    </div>
+                    <label for="team">KB</label>  
+                </div>
             </div>
 
         </div>   
